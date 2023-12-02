@@ -12,3 +12,4 @@ p=ewTx1+ewTx
 Or in the more commonly seen form:
 hw(x)=11+e−wTx
 ![image](https://github.com/Alisyed098/Customer-Churn-Anallysis/assets/134094832/13727cfc-4ebd-46f0-9b01-1d49942876c5)
+The logistic function has some nice properties. The y-value represents the probability and it is always bounded between 0 and 1, which is want we wanted for probabilities. For an x value of 0 you get a 0.5 probability. Also as you get more positive x value you get a higher probability, on the other hand, a more negative x value results in a lower probability.
