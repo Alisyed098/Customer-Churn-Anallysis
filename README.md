@@ -82,4 +82,5 @@ PaymentMethod : The customer’s payment method (Electronic check, Mailed check,
 MonthlyCharges : The amount charged to the customer monthly
 
 TotalCharges : The total amount charged to the customer
+
 Churn : Whether the customer churned or not (Yes or No)
