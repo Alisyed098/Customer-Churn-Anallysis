@@ -80,5 +80,6 @@ PaperlessBilling : Whether the customer has paperless billing or not (Yes, No)
 PaymentMethod : The customer’s payment method (Electronic check, Mailed check, Bank transfer (automatic), Credit card (automatic))
 
 MonthlyCharges : The amount charged to the customer monthly
+
 TotalCharges : The total amount charged to the customer
 Churn : Whether the customer churned or not (Yes or No)
