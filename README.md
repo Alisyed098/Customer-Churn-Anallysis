@@ -74,6 +74,7 @@ StreamingTV : Whether the customer has streaming TV or not (Yes, No, No internet
 StreamingMovies : Whether the customer has streaming movies or not (Yes, No, No internet service)
 
 Contract : The contract term of the customer (Month-to-month, One year, Two year)
+
 PaperlessBilling : Whether the customer has paperless billing or not (Yes, No)
 PaymentMethod : The customer’s payment method (Electronic check, Mailed check, Bank transfer (automatic), Credit card (automatic))
 MonthlyCharges : The amount charged to the customer monthly
