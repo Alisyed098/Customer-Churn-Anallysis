@@ -45,6 +45,7 @@ Churn prediction is analytical studies on the possibility of a customer abandoni
 customerID : Customer ID
 
 gender : Whether the customer is a male or a female
+
 SeniorCitizen : Whether the customer is a senior citizen or not (1, 0)
 Partner : Whether the customer has a partner or not (Yes, No)
 Dependents : Whether the customer has dependents or not (Yes, No)
