@@ -14,3 +14,23 @@ hw(x)=11+e−wTx
 ![image](https://github.com/Alisyed098/Customer-Churn-Anallysis/assets/134094832/13727cfc-4ebd-46f0-9b01-1d49942876c5)
 
 The logistic function has some nice properties. The y-value represents the probability and it is always bounded between 0 and 1, which is want we wanted for probabilities. For an x value of 0 you get a 0.5 probability. Also as you get more positive x value you get a higher probability, on the other hand, a more negative x value results in a lower probability.
+
+**Defining the cost function for Logistic Regression**
+When utilizing logistic regression, we are trying to learn the w values in order to maximize the probability of correctly classifying our glasses. Let's say someone did give us some w values of the logistic regression model, how would we determine if they were good values or not? What we would hope is that for the household of class 1, the probability values are close to 1 and for the household of class 0 the probability is close to 0.
+But we don't care about getting the correct probability for just one observation, we want to correctly classify all our observations. If we assume our data are independent and identically distributed (think of it as all of them are treated equally), we can just take the product of all our individually calculated probabilities and that becomes the objective function we want to maximize. So in math:
+∏class1hw(x)∏class01−hw(x)
+
+The ∏ symbol means take the product of the hw(x) for the observations that are classified as that class. You will notice that for observations that are labeled as class 0, we are taking 1 minus the logistic function. That is because we are trying to find a value to maximize, and since observations that are labeled as class 0 should have a probability close to zero, 1 minus the probability should be close to 1. This procedure is also known as the maximum likelihood estimation.
+Next we will re-write the original cost function as:
+ℓ(w)=∑i=1Nyilog(hw(xi))+(1−yi)log(1−hw(xi))
+where:
+We define yi to be 1 when the ith observation is labeled class 1 and 0 when labeled as class 0, then we only compute hw(xi) for observations that are labeled class 1 and 1−hw(xi) for observations that are labeled class 0, which is still the same idea as the original function.
+Next we'll transform the original hw(xi) by taking the log. As we'll later see this logarithm transformation will make our cost function more convenient to work with, and because the logarithm is a monotonically increasing function, the logarithm of a function achieves its maximum value at the same points as the function itself. When we take the log, our product across all data points, it becomes a sum.
+The N simply represents the total number of the data.
+Often times you'll also see the notation above be simplified in the form of a maximum likelihood estimator:
+ℓ(w)=∑i=1Nlog(P(yi∣xi,w))
+The equation above simply denotes the idea that , w represents the parameters we would like to estimate the parameters w by maximizing conditional probability of yi given xi.
+Now by definition of probability in the logistic regression model:
+hw(xi)=11+e−wTxi and 1−hw(xi)=e−wTxi1+e−wTxi.
+By substituting these expressions into our ℓ(w) equation and simplifying it further we can obtain a simpler expression.
+ℓ(w)=∑i=1Nyilog(hw(xi))+(1−yi)log(1−hw(xi))=∑i=1Nyilog(11+e−wTxi)+(1−yi)log(e−wTxi1+e−wTxi)=∑i=1N−yilog(1+e−wTxi)+(1−yi)(−wTxi−log(1+e−wTxi))=∑i=1N(yi−1)(wTxi)−log(1+e−wTxi)
