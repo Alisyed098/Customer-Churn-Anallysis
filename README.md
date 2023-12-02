@@ -16,6 +16,7 @@ hw(x)=11+e−wTx
 The logistic function has some nice properties. The y-value represents the probability and it is always bounded between 0 and 1, which is want we wanted for probabilities. For an x value of 0 you get a 0.5 probability. Also as you get more positive x value you get a higher probability, on the other hand, a more negative x value results in a lower probability.
 
 **Defining the cost function for Logistic Regression**
+
 When utilizing logistic regression, we are trying to learn the w values in order to maximize the probability of correctly classifying our glasses. Let's say someone did give us some w values of the logistic regression model, how would we determine if they were good values or not? What we would hope is that for the household of class 1, the probability values are close to 1 and for the household of class 0 the probability is close to 0.
 But we don't care about getting the correct probability for just one observation, we want to correctly classify all our observations. If we assume our data are independent and identically distributed (think of it as all of them are treated equally), we can just take the product of all our individually calculated probabilities and that becomes the objective function we want to maximize. So in math:
 ∏class1hw(x)∏class01−hw(x)
