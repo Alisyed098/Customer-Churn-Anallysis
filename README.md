@@ -1,5 +1,6 @@
 # Customer-Churn-Analysis
 **Introduction: What is Logistic Regression?**
+
 Logistic regression is a classification algorithm that predicts the probability of an outcome that can only have two values (i.e. a dichotomy). A logistic regression produces a logistic curve, which is limited to values between 0 and 1. Logistic regression models the probability that each input belongs to a particular category.
 Logistic regression is an excellent tool to know for classification problems, which are problems where the output value that we wish to predict only takes on only a small number of discrete values. Here we'll focus on the binary classification problem, where the output can take on only two distinct classes.
 In Logistic Regression, the log-odds of a categorical response being "true" (1) is modeled as a linear combination of the features:
