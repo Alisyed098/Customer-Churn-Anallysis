@@ -51,6 +51,7 @@ SeniorCitizen : Whether the customer is a senior citizen or not (1, 0)
 Partner : Whether the customer has a partner or not (Yes, No)
 
 Dependents : Whether the customer has dependents or not (Yes, No)
+
 tenure : Number of months the customer has stayed with the company
 PhoneService : Whether the customer has a phone service or not (Yes, No)
 MultipleLines : Whether the customer has multiple lines or not (Yes, No, No phone service)
