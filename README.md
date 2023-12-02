@@ -84,5 +84,7 @@ MonthlyCharges : The amount charged to the customer monthly
 TotalCharges : The total amount charged to the customer
 
 Churn : Whether the customer churned or not (Yes or No)
-![Uploading image.png…]()
+
+![image](https://github.com/Alisyed098/Customer-Churn-Anallysis/assets/134094832/8219af9f-dc5f-4814-95d1-ed7a93d127e8)
+
 
